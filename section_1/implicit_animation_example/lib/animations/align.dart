@@ -19,8 +19,6 @@ class _AlignDemoState extends State<AlignExample> {
     });
   }
 
-  GlobalKey test = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -32,7 +30,6 @@ class _AlignDemoState extends State<AlignExample> {
           child: AnimateMePlease(color: salmon),
         ),
         AlignmentButton(
-          key: test,
           alignment: Alignment.topLeft,
           onPressed: _changeAlignment,
         ),
